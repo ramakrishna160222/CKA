@@ -20,14 +20,19 @@ ENTRYPOINT ["java","-jar","app.jar"]
 💡 Make sure you’ve built the JAR first (e.g. mvn -q -DskipTests clean package).
 ## 🔹 Step 3: Build the Docker image 🏗️
 ```bash
-docker build -t dockerDemoApp:latest .
+docker build -t dockerdemoapp:latest .
 ```
+
+<img width="1178" height="204" alt="image" src="https://github.com/user-attachments/assets/7389eea7-5f98-4925-a90c-b90c1eac02bb" />
+
 
 ## 🔹 Step 4: Run locally 🚀
 ```bash
-docker run -d -p 8082:8082 --name docker-demo dockerDemoApp:latest
+docker run -d -p 8082:8082 --name docker-demo dockerdemoapp:latest
 docker ps
 ```
+<img width="1514" height="63" alt="image" src="https://github.com/user-attachments/assets/f9ffce8a-3413-4429-b8bc-7d63869b1dd9" />
+
 ##### verify in browser:
 ###### http://localhost:8082/hello
 ## 🔹 Step 5: Push to Docker Hub 📦
