@@ -30,22 +30,26 @@ RUN mvn clean package -DskipTests
 FROM gcr.io/distroless/java17-debian11
 WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
-ENTRYPOINT ["java", "-jar", "app.jar"] 
+ENTRYPOINT ["java", "-jar", "app.jar"]
+```
 
 ### 🔹 Step 4: Build Docker Image
 ```bash
 docker build -t krishna160222/multistage:v1 .
+```
 <img width="1748" height="861" alt="image" src="https://github.com/user-attachments/assets/9fd6a15e-205a-4d20-b891-4586a863f295" />
 
 ### 🔹 Step 5: Verify Image
 
-Copy code
+```bash
 docker images
+```
 <img width="1529" height="109" alt="image" src="https://github.com/user-attachments/assets/7d5900bb-de92-44d8-b327-ce5e5318c41e" />
 
 ### 🔹 Step 6: Run Locally
-Copy code
+```bash
 docker run -d -p 8082:8082 krishna160222/multistage:v1
+```
 👉 Visit: http://localhost:8082/hello
 <img width="1236" height="99" alt="image" src="https://github.com/user-attachments/assets/b3d28c42-6743-4ed4-961f-4507210d943c" />
 
@@ -54,9 +58,9 @@ docker run -d -p 8082:8082 krishna160222/multistage:v1
 
 
 ### 🔹 Step 7: Verify Running Containers
-
-Copy code
+```bash
 docker ps
+```
 <img width="1897" height="186" alt="image" src="https://github.com/user-attachments/assets/62073966-cdce-4472-9e9b-a3409f6fb115" />
 
 ### 🔹 Step 8: Login & Push
@@ -64,19 +68,22 @@ Create a public repo on Docker Hub → krishna160222/multistage
 <img width="1910" height="531" alt="image" src="https://github.com/user-attachments/assets/7b36437f-4b6b-4a59-8de5-22ee6a9f8c2e" />
 
 Push the image:
-
-
-Copy code
+```bash
 docker login
 docker push krishna160222/multistage:v1
+```
+<img width="1079" height="388" alt="image" src="https://github.com/user-attachments/assets/43616a59-e4cf-486e-96d4-3e2444164e16" />
+
 ### 🔹 Step 9: Pull & Run on Another Machine
-Copy code
+```bash
 docker pull krishna160222/multistage:v1
 docker run -d -p 8080:8080 krishna160222/multistage:v1
+```
 🔍 Debugging Commands
-Copy code
+```bash
 docker logs <containerId>
 docker inspect <containerId>
+```
 ✅ Benefits of Multi-Stage Builds
 ⚡ Smaller final image size
 
