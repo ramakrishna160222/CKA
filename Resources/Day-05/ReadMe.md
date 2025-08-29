@@ -30,7 +30,7 @@ RUN mvn clean package -DskipTests
 FROM gcr.io/distroless/java17-debian11
 WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
-ENTRYPOINT ["java", "-jar", "app.jar"] ```
+ENTRYPOINT ["java", "-jar", "app.jar"] 
 
 ### 🔹 Step 4: Build Docker Image
 ```bash
