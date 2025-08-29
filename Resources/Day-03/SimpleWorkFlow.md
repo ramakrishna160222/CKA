@@ -1,4 +1,6 @@
-a✅ Creates a Docker image from your source code + Dockerfile.
+#### LinkedIn Post: https://www.linkedin.com/posts/srkv_k8s-series-3-docker-simple-work-flow-so-activity-7366790417784147968-e13i?utm_source=share&utm_medium=member_desktop&rcm=ACoAADAkuYUBj5qk2hWdfyttuAVT5KSWHnwKUqw
+
+# Creates a Docker image from your source code + Dockerfile.
 
 2️⃣ Store Image Locally 📂
 
