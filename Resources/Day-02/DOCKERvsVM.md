@@ -1,4 +1,5 @@
-LinkedIn : https://www.linkedin.com/posts/srkv_docker-devops-kubernetes-activity-7366046451442814976-Srxe?utm_source=share&utm_medium=member_desktop&rcm=ACoAADAkuYUBj5qk2hWdfyttuAVT5KSWHnwKUqw
+#### LinkedIn : https://www.linkedin.com/posts/srkv_docker-devops-kubernetes-activity-7366046451442814976-Srxe?utm_source=share&utm_medium=member_desktop&rcm=ACoAADAkuYUBj5qk2hWdfyttuAVT5KSWHnwKUqw
+
 # 🐳 Docker vs Virtual Machines (VMs)
 
 Understanding the difference between **Docker Containers** and **Virtual Machines (VMs)** is key for developers moving into DevOps & cloud.
