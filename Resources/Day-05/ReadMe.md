@@ -19,8 +19,7 @@ Multi-stage builds help reduce image size, improve performance, and enhance secu
     
 ### 🔹 Step 3: Create a Multi-Stage Dockerfile
 Create a file named Dockerfile and add the following content:
-```bash
-Copy code
+```bas
 #### Stage 1: Build the app
 FROM maven:3.9.6-eclipse-temurin-17 AS build
 WORKDIR /app
@@ -34,8 +33,7 @@ COPY --from=build /app/target/*.jar app.jar
 ENTRYPOINT ["java", "-jar", "app.jar"]
 
 ### 🔹 Step 4: Build Docker Image
-bash
-Copy code
+```bash
 docker build -t krishna160222/multistage:v1 .
 <img width="1748" height="861" alt="image" src="https://github.com/user-attachments/assets/9fd6a15e-205a-4d20-b891-4586a863f295" />
 
