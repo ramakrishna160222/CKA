@@ -5,8 +5,9 @@
 2️⃣ Store Image Locally 📂
 
 List images on your system:
-
+```dockerfile
 docker images
+```
 
 
 ✅ The built image is stored in your local Docker image cache.
@@ -14,13 +15,14 @@ docker images
 3️⃣ Push Image to Registry 📦
 
 Tag your image:
-
+```bash
 docker tag myapp username/myapp:v1
-
+```
 
 Push it to Docker Hub (or private registry):
-
+```bash
 docker push username/myapp:v1
+```
 
 
 ✅ Makes the image available to others or for deployment.
@@ -28,18 +30,18 @@ docker push username/myapp:v1
 4️⃣ Pull Image from Registry ⬇️
 
 On another machine/server:
-
+```bash
 docker pull username/myapp:v1
-
+```
 
 ✅ Downloads the image from the registry.
 
 5️⃣ Run a Container 🚀
 
 Start a container from the pulled image:
-
+```bash
 docker run -p 8080:8080 username/myapp:v1
-
+```
 
 ✅ Runs your application inside a container.
 
