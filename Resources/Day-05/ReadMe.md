@@ -8,9 +8,10 @@ Multi-stage builds help reduce image size, improve performance, and enhance secu
 ## 📌 Steps to Implement
 
 ### 🔹 Step 1: Clone the Project
-    ```bash
+    ```
     git clone https://github.com/ramakrishna160222/CKA.git
     cd CKA/Resources/Day-05/DockerDemoAp
+    ```
 
 ### 🔹 Step 2: Move into Project Folder
     bash
