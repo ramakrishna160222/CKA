@@ -19,14 +19,14 @@ Multi-stage builds help reduce image size, improve performance, and enhance secu
     
 ### 🔹 Step 3: Create a Multi-Stage Dockerfile
 Create a file named Dockerfile and add the following content:
-```bash
-#### Stage 1: Build the app
+```dockerfile
+# Stage 1: Build the app
 FROM maven:3.9.6-eclipse-temurin-17 AS build
 WORKDIR /app
 COPY pom.xml .
 RUN mvn dependency:go-offlinCOPY src ./src
 RUN mvn clean package -DskipTests
-#### Stage 2: Run the app
+# Stage 2: Run the app
 FROM gcr.io/distroless/java17-debian11
 WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
