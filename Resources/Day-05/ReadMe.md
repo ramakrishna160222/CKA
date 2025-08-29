@@ -16,13 +16,10 @@ Multi-stage builds help reduce image size, improve performance, and enhance secu
 ### 🔹 Step 2: Move into Project Folder
     
     cd DockerDemoApp
-    <img width="720" height="96" alt="image" src="https://github.com/user-attachments/assets/42d63081-607d-49b0-8664-383a68d76023" />
-
     
 ### 🔹 Step 3: Create a Multi-Stage Dockerfile
 Create a file named Dockerfile and add the following content:
-
-
+bash
 Copy code
 #### Stage 1: Build the app
 FROM maven:3.9.6-eclipse-temurin-17 AS build
