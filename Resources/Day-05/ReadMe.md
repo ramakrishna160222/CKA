@@ -24,22 +24,17 @@ Copy code
 #### Stage 1: Build the app
 FROM maven:3.9.6-eclipse-temurin-17 AS build
 WORKDIR /app
-
 COPY pom.xml .
-RUN mvn dependency:go-offline
-
-COPY src ./src
+RUN mvn dependency:go-offlinCOPY src ./src
 RUN mvn clean package -DskipTests
-
 #### Stage 2: Run the app
 FROM gcr.io/distroless/java17-debian11
 WORKDIR /app
-
 COPY --from=build /app/target/*.jar app.jar
 ENTRYPOINT ["java", "-jar", "app.jar"]
 
 ### 🔹 Step 4: Build Docker Image
-
+bash
 Copy code
 docker build -t krishna160222/multistage:v1 .
 <img width="1748" height="861" alt="image" src="https://github.com/user-attachments/assets/9fd6a15e-205a-4d20-b891-4586a863f295" />
