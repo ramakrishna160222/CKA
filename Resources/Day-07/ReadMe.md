@@ -8,7 +8,7 @@ Let’s break down Kubernetes in simple terms 👨‍💻
 - **Worker Nodes (💪)** → The servers/VMs where actual applications (Pods) run.  
 - Master Node makes decisions, Worker Nodes execute them.  
 
-![Control Plane vs Worker Nodes](https://kubernetes.io/images/docs/components-of-kubernetes.png)
+[Control Plane vs Worker Nodes](https://kubernetes.io/images/docs/components-of-kubernetes.png)
 
 ---
 
@@ -18,7 +18,7 @@ Let’s break down Kubernetes in simple terms 👨‍💻
    - A Pod can have one or multiple containers.  
    - Containers inside a Pod share network & storage.  
 
-![Pods vs Containers](https://d33wubrfki0l68.cloudfront.net/2f7cb9ff9f84d9e5fbbd81e57c8b0d834f8f20d0/2b3f8/docs/concepts/workloads/pods/pod-overview.svg)
+
 
 ---
 
@@ -30,7 +30,7 @@ Let’s break down Kubernetes in simple terms 👨‍💻
 - **Kubelet 🤝** → Agent on worker node to run Pods.  
 - **Kube-Proxy 🌐** → Handles networking & load balancing.  
 
-![Control Plane Components](https://d33wubrfki0l68.cloudfront.net/42efef044ab84b28e8e40e5551db4bc0dfbda8ee/8e2c0/docs/tutorials/kubernetes-basics/public/images/module_04_cluster.svg)
+
 
 ---
 
@@ -42,7 +42,7 @@ Let’s break down Kubernetes in simple terms 👨‍💻
 5. **Kube-Proxy 🌐** sets up networking.  
 ✅ The app is running 🚀  
 
-![Kubectl Workflow](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*mM-9E5nlXsgZb8ah43mRrQ.png)
+
 
 ---
 
@@ -54,7 +54,7 @@ Let’s break down Kubernetes in simple terms 👨‍💻
 - **Kube-Proxy** = networking.  
 Together → Kubernetes provides scalability, self-healing & automation ⚡  
 
-![Kubernetes Interaction](https://phoenixnap.com/kb/wp-content/uploads/2021/04/kubernetes-cluster-architecture.png)
+
 
 ---
 
