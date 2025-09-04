@@ -57,3 +57,6 @@ Understanding the difference between **Docker Containers** and **Virtual Machine
 
 👉 Use Docker when you need **speed, scalability, and portability**.  
 👉 Use VMs when you need **full OS isolation**.  
+
+  ---
+  👨‍💻 Author: Siva Rama Krishna Vissamsetti
