@@ -49,3 +49,6 @@ Docker = Good for creating & running containers.
 But → lacks scalability, automation, HA.
 
 Kubernetes = Solves these problems with orchestration.
+
+---
+👨‍💻 Author: Siva Rama Krishna Vissamsetti
