@@ -30,8 +30,7 @@ Let’s break down Kubernetes in simple terms 👨‍💻
 - **Kubelet 🤝** → Agent on worker node to run Pods.  
 - **Kube-Proxy 🌐** → Handles networking & load balancing.
 
-  ---
-  👨‍💻 Author: Siva Rama Krishna Vissamsetti
+
 
 
 
@@ -60,4 +59,5 @@ Together → Kubernetes provides scalability, self-healing & automation ⚡
 
 
 ---
-
+  
+  👨‍💻 Author: Siva Rama Krishna Vissamsetti
