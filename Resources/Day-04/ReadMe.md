@@ -65,3 +65,7 @@ docker logs -f docker-demo
 docker images
 ```
 ✅ You’ll see dockerDemoApp:latest stored locally and running as a container.
+
+
+  ---
+  👨‍💻 Author: Siva Rama Krishna Vissamsetti
