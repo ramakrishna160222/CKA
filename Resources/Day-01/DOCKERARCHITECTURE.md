@@ -62,5 +62,8 @@ Docker works with the following key objects:
 
 👉 *Docker Architecture ensures applications are lightweight, portable, and consistent across environments.*  
 
+  ---
+  👨‍💻 Author: Siva Rama Krishna Vissamsetti
+
 
 
