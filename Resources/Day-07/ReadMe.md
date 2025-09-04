@@ -28,7 +28,10 @@ Let’s break down Kubernetes in simple terms 👨‍💻
 - **Scheduler 📌** → Assigns Pods to worker nodes.  
 - **Controller Manager 👀** → Ensures actual state = desired state.  
 - **Kubelet 🤝** → Agent on worker node to run Pods.  
-- **Kube-Proxy 🌐** → Handles networking & load balancing.  
+- **Kube-Proxy 🌐** → Handles networking & load balancing.
+
+  ---
+  👨‍💻 Author: Siva Rama Krishna Vissamsetti
 
 
 
